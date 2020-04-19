@@ -1,0 +1,32 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	/* background-color: aliceblue; */
+	font-family: monospace;
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.nav-wrapper ul li a {
+	color: black;
+}
+
+.card:hover {
+	opacity: 0.8;
+	transition: ease-in-out 0.3s;
+}
+
+.brand-logo {
+	margin-left: 95px;
+}
+
+#tag-line {
+	font-size: 16px !important;
+}
