@@ -14,24 +14,27 @@
 </head>
 
 <body>
+   <div class="navbar-fixed">
 
-   <nav>
-      <div class="nav-wrapper white">
-         <a href="#!" class="brand-logo black-text">THOMAS DUNN <span id="tag-line" class="indigo-text">
-               Analyst/Developer</span></a>
-         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-         <ul class="right hide-on-med-and-down black-text">
-            <li><a href="">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="">Contact</a></li>
-         </ul>
-         <ul class="side-nav" id="mobile-demo">
-            <li><a href="">Projects</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Contanct</a></li>
-         </ul>
-      </div>
-   </nav>
+      <nav>
+         <div class="nav-wrapper white">
+            <a href="#" class="brand-logo black-text">THOMAS DUNN <span id="tag-line" class="indigo-text">
+                  Analyst/Developer</span></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down black-text">
+               <li><a href="#skills"><i class="fas fa-code"></i></a></li>
+               <li><a href="#education"><i class="fas fa-graduation-cap"></i></a></li>
+               <li><a href="#experience"><i class="fas fa-briefcase"></i></a></li>
+               <li><a href="#contact"><i class="material-icons">email</i></a></li>
+            </ul>
+            <ul class="side-nav" id="mobile-demo">
+               <li><a href="">Projects</a></li>
+               <li><a href="">Education</a></li>
+               <li><a href="">Contanct</a></li>
+            </ul>
+         </div>
+      </nav>
+   </div>
 
    <main>
       <div class="container">
@@ -41,7 +44,7 @@
             </div>
          </div>
          <div class="row">
-            <h5>Projects</h5>
+            <!-- <h5>Projects</h5> -->
             <div class="col s12 m6">
                <div class="card hoverable">
                   <a href="https://django-issue-tracker-1.herokuapp.com/" target="_blank">
@@ -56,8 +59,11 @@
                      </div> -->
                   </a>
                   <div class="card-action">
-                     <a href="https://github.com/tdunn891/milestone-4" target="_blank">GitHub</a>
-                     <a href="#">Icons</a>
+                     <a href="https://github.com/tdunn891/milestone-4" target="_blank"><img src="images/github-32.png"
+                           class="github-icon"></a>
+                     <span class="badge" data-badge-caption="PostgreSQL"></span>
+                     <span class="badge" data-badge-caption="Django"></span>
+                     <!-- <a href="#">Icons</a> -->
                   </div>
                </div>
             </div>
@@ -75,8 +81,11 @@
                         I am convenient because I require little markup to use effectively.</p>
                   </div> -->
                   <div class="card-action">
-                     <a href="https://github.com/tdunn891/spacex-dashboard" target="_blank">GitHub</a>
-                     <a href="#">Icons</a>
+                     <a href="https://github.com/tdunn891/spacex-dashboard" target="_blank"><img
+                           src="images/github-32.png" class="github-icon"></a>
+                     <!-- <a href="#">Icons</a> -->
+                     <span class="badge" data-badge-caption="APIs"></span>
+                     <span class="badge" data-badge-caption="Flask"></span>
                   </div>
                </div>
             </div>
@@ -94,8 +103,9 @@
                         I am convenient because I require little markup to use effectively.</p>
                   </div>-->
                   <div class="card-action">
-                     <a href="https://github.com/tdunn891/aeropress-hub" target="_blank">GitHub</a>
-                     <a href="#">Icons</a>
+                     <a href="https://github.com/tdunn891/aeropress-hub" target="_blank"><img src="images/github-32.png"
+                           class="github-icon"></a>
+                     <!-- <a href="#">Icons</a> -->
                   </div>
                </div>
             </div>
@@ -113,15 +123,14 @@
                         I am convenient because I require little markup to use effectively.</p>
                   </div> -->
                   <div class="card-action">
-                     <a href="https://github.com/tdunn891/addie-mcginty-cottage" target="_blank">GitHub</a>
-                     <a href="#">Icons</a>
+                     <a href="https://github.com/tdunn891/addie-mcginty-cottage" target="_blank"><img
+                           src="images/github-32.png" class="github-icon"></a>
                   </div>
                </div>
             </div>
          </div>
-
          <div class="row">
-            <div class="col s12 m6">
+            <div class="col s12 m6" id="education">
                <h4><i class="fas fa-graduation-cap"></i></h4>
                <ul>
                   <a href="https://codeinstitute.net/" target="_blank">Code Institute</a>
@@ -133,23 +142,22 @@
                   <li><b>Bachelor of Commerce</b> (Finance)</li>
                </ul>
             </div>
-            <div class="col s12 m6">
+            <div class="col s12 m6" id="skills">
                <h4><i class="fas fa-code"></i></h4>
                <ul>
                   <li>Python</li>
                   <li>Javascript</li>
-                  <li>SQL</li>
                   <li>Django</li>
                   <li>Flask</li>
-                  <li>VBA & Excel</li>
-                  <li>HTML & CSS</li>
+                  <li>VBA/Excel</li>
+                  <li>SQL</li>
+                  <li>HTML/CSS</li>
                   <li>Tableau</li>
                   <li>Bloomberg Terminal</li>
                </ul>
             </div>
-            <hr>
             <div class="row">
-               <div class="col s12">
+               <div class="col s12" id="experience">
                   <h4><i class="fas fa-briefcase"></i></h4>
                   <ul>
                      <li><a href="https://www.aberdeenstandard.com/" target="_blank">Aberdeen Standard Investments</a>
@@ -169,14 +177,17 @@
       </div>
       <!-- FAB -->
       <div class="fixed-action-btn">
-         <a class="btn-floating btn-large red">
+         <a class="btn-floating btn-large indigo">
             <i class="large material-icons">mode_edit</i>
          </a>
          <ul>
-            <li><a class="btn-floating red"><i class="material-icons"></i></a></li>
-            <li><a class="btn-floating yellow darken-1"><i class="material-icons"></i></a></li>
-            <li><a class="btn-floating green"><i class="material-icons"></i></a></li>
-            <li><a class="btn-floating blue"><i class="material-icons"></i></a></li>
+            <li><a class="btn-floating white" href="https://www.linkedin.com/in/thomas-dunn-689b0168/"
+                  target="_blank"><img src="images/linkedin.png" id="fab-linkedin"></a></li>
+            <li><a class="btn-floating blue darken-1" href="mailto:thomas.brian.dunn@gmail.com"><i
+                     class="material-icons">email</i></a></li>
+            <li><a class="btn-floating white" href="https://github.com/tdunn891/" target="_blank"><img
+                     src="images/github-32.png" id="fab-github"></a></li>
+            <!-- <li><a class="btn-floating blue"><i class="material-icons"></i></a></li> -->
          </ul>
       </div>
    </main>
@@ -185,7 +196,7 @@
       <hr>
       <div class="container">
          <div class="row">
-            <div class="col l6 s12">
+            <div class="col l6 s12" id="contact">
                <h5 class="grey-text"><i class="far fa-envelope"></i> Contact</h5>
                <ul>
                   <li><a href="https://www.linkedin.com/in/thomas-dunn-689b0168">LinkedIn</a></li>
@@ -194,7 +205,7 @@
                </ul>
             </div>
             <div class="col l4 offset-l2 s12">
-               <h5 class="grey-text">Links</h5>
+               <!-- <h5 class="grey-text">Links</h5> -->
                <ul>
                   <!-- <li><a href="https://www.linkedin.com/in/thomas-dunn-689b0168">LinkedIn</a></li>
                   <li><a href="mailto:thomas.brian.dunn@gmail.com">Email</a></li> -->
@@ -202,12 +213,12 @@
             </div>
          </div>
       </div>
-      <div class="footer-copyright">
-         <div class="container">
-            <span class="grey-text">2020 Thomas Dunn</span>
-            <a class="grey-text right" href="#!">More Links</a>
-         </div>
-      </div>
+      <!-- <div class="footer-copyright">
+         <div class="container"> -->
+      <!-- <span class="grey-text">2020 Thomas Dunn</span> -->
+      <!-- <a class="grey-text right" href="#!">More Links</a> -->
+      <!-- </div>
+      </div> -->
    </footer>
 
    <!--Import jQuery before materialize.js-->

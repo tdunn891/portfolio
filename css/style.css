@@ -30,3 +30,26 @@ main {
 #tag-line {
 	font-size: 16px !important;
 }
+
+.github-icon:hover {
+	opacity: 0.5;
+}
+
+.github-icon {
+	width: 22px;
+}
+
+#fab-github {
+	margin-top: 6px;
+	width: 30px;
+}
+
+#fab-linkedin {
+	margin-top: 8px;
+	margin-left: 4px;
+	width: 28px;
+}
+
+.card-action {
+	/* max-height: 40px; */
+}
