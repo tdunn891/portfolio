@@ -50,6 +50,14 @@ main {
 	width: 28px;
 }
 
-.card-action {
-	/* max-height: 40px; */
+.project-image {
+	max-width: 100%;
+}
+
+.card-title {
+	font-size: 14px !important;
+}
+
+.badge {
+	font-size: 12px !important;
 }
