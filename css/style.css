@@ -32,7 +32,8 @@ main {
 }
 
 #tag-line {
-	font-size: 16px !important;
+	font-size: 15px !important;
+	vertical-align: middle;
 }
 
 .github-icon:hover {
@@ -41,6 +42,15 @@ main {
 
 .github-icon {
 	width: 20px;
+}
+
+.nav-icon-list li a img {
+	vertical-align: middle;
+}
+
+#contact-list li a img,
+#contact-list li a i {
+	vertical-align: middle;
 }
 
 #fab-github {
