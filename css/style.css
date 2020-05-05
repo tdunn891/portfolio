@@ -36,6 +36,22 @@ main {
 	vertical-align: middle;
 }
 
+#github-nav-icon {
+	font-size: 28px;
+}
+
+#github-footer-icon {
+	font-size: 32px;
+}
+
+#email-nav-icon {
+	font-size: 25px;
+}
+
+#email-footer-icon {
+	font-size: 28px;
+}
+
 .github-icon:hover {
 	opacity: 0.5;
 }
@@ -91,7 +107,7 @@ main {
 
 #bloomberg {
 	padding-top: 10px;
-	width: 88px;
+	width: 90px;
 }
 
 #tableau {
@@ -116,15 +132,21 @@ main {
 	font-size: 12px;
 }
 
+#skills-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .skills-list li,
 #contact-list li {
 	float: left;
-	margin: 14px 14px;
+	margin: 10px 14px;
 }
 
 .skills-list,
 #contact-list {
-	display: inline-block;
+	display: inline-flex;
+	flex-flow: wrap;
 }
 
 .skills-list-2 {
@@ -135,10 +157,13 @@ main {
 	#tag-line {
 		display: none;
 	}
+	.brand-logo {
+		font-size: 24px !important;
+		/* margin-left: 0; */
+	}
 }
 
-/*  */
-@media (min-width: 962px) {
+@media (min-width: 562px) {
 	.brand-logo {
 		margin-left: 28px;
 	}
