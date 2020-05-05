@@ -8,6 +8,13 @@
    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
    <link rel="stylesheet" href="css/style.css">
    <script src="https://kit.fontawesome.com/b403604e38.js" crossorigin="anonymous"></script>
+   <!-- Fira Code font -->
+   <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+   <!-- Devicons -->
+   <link rel="stylesheet"
+      href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="images/code_favicon.png" type="image/x-icon">
    <title>Thomas Dunn</title>
    <!--Let browser know website is optimized for mobile-->
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -15,12 +22,12 @@
 
 <body>
    <div class="navbar-fixed">
-
       <nav>
          <div class="nav-wrapper white">
-            <a href="#" class="brand-logo black-text">THOMAS DUNN <span id="tag-line" class="indigo-text">
+            <a href="#" class="brand-logo black-text">Thomas Dunn <span id="tag-line" class="indigo-text">
                   Analyst/Developer</span></a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"
+                  id="burger">menu</i></a>
             <ul class="right hide-on-med-and-down black-text">
                <li><a href="#skills"><i class="fas fa-code"></i></a></li>
                <li><a href="#education"><i class="fas fa-graduation-cap"></i></a></li>
@@ -28,9 +35,10 @@
                <li><a href="#contact"><i class="material-icons">email</i></a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
-               <li><a href="">Projects</a></li>
-               <li><a href="">Education</a></li>
-               <li><a href="">Contanct</a></li>
+               <li><a href="#">Projects</a></li>
+               <li><a href="#education">Education</a></li>
+               <li><a href="#experience">Experience</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
          </div>
       </nav>
@@ -41,10 +49,12 @@
          <div class="row">
             <div class="col s12 center">
                <br>
+               <br>
             </div>
          </div>
          <div class="row">
-            <!-- <h5>Projects</h5> -->
+            <h5>Recent Projects</h5>
+            <br>
             <div class="col s12 m6">
                <div class="card hoverable">
                   <a href="https://django-issue-tracker-1.herokuapp.com/" target="_blank">
@@ -57,7 +67,7 @@
                      </div> -->
                   </a>
                   <div class="card-action">
-                     <span class="card-title">TrackIt</span>
+                     <span class="card-title">TrackIt Issue Tracker</span>
                      <a href="https://github.com/tdunn891/milestone-4" target="_blank"><img src="images/github-32.png"
                            class="github-icon right"></a>
                      <!-- <span class="badge right" data-badge-caption="PostgreSQL"></span>
@@ -125,49 +135,82 @@
                </div>
             </div>
          </div>
+      </div>
+      <div class="container-fluid">
          <div class="row">
-            <div class="col s12 m6" id="education">
+            <div class="col s12 center" id="skills">
+               <br>
+               <ul class="skills-list">
+                  <li><i class="devicon-python-plain-wordmark" title="Python"></i></li>
+                  <li><i class="devicon-django-plain-wordmark colored" title="Django"></i></li>
+                  <li><img src="images/flask.png" alt="Flask" title="Flask" id="flask"></li>
+                  <li><i class="devicon-javascript-plain" title="JavaScript"></i></li>
+                  <li><i class="devicon-html5-plain-wordmark" title="HTML"></i></li>
+                  <li><i class="devicon-css3-plain-wordmark" title="CSS"></i></li>
+                  <li><i class="devicon-bootstrap-plain-wordmark colored" title="Bootstrap 4"></i></i>
+                  <li><a href="https://materializecss.com/" target="_blank"><img
+                           src="https://materializecss.com/res/materialize.svg" alt="materialize" title="Materialize"
+                           id="materialize"></i></a></li>
+                  <li><i class="devicon-mongodb-plain-wordmark colored" title="MongoDB"></i>
+                  <li><i class="devicon-postgresql-plain-wordmark colored" title="PostgreSQL"></i></li>
+                  <li><img src="images/vba.png" alt="Excel & VBA" title="Excel/VBA" id="excel-vba">
+                  <li><a href="https://www.bloomberg.com/professional/solution/bloomberg-terminal/" target="_blank">
+                        <img src="images/bloomberg.png" alt="Bloomberg" title="Bloomberg Terminal" id="bloomberg"></a>
+                  <li><a href="https://www.tableau.com/" target="_blank"><img src="images/tableau.png" alt="Tableau"
+                           title="Tableau" id="tableau"></a>
+                  </li>
+                  <li><i class="devicon-heroku-plain-wordmark colored" title="Heroku"></i></li>
+                  <li><i class="devicon-git-plain-wordmark colored" title="Git & GitHub"></i></li>
+                  <li><small>Learning:</small><br><a href="https://reactnative.dev/" target="_blank"><i
+                           class="devicon-react-original-wordmark colored"></i></a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col s12 m6 center" id="education">
                <h4><i class="fas fa-graduation-cap"></i></h4>
                <ul>
                   <a href="https://codeinstitute.net/" target="_blank">Code Institute</a>
                   <li><b>Full-Stack Software Development Diploma</b></li>
-                  <li>(Edinburgh Napier University Credit-Rated)</b></li>
+                  <li>Edinburgh Napier University Credit-Rated</b></li>
                   <br>
-                  <a href="https://www.uq.edu.au/" target="_blank">University of Queensland</a>
+                  <a href="https://www.uq.edu.au/" target="_blank">University of Queensland, Australia</a>
                   <li><b>Bachelor of Economics</b> (Intl. Trade & Finance) </li>
                   <li><b>Bachelor of Commerce</b> (Finance)</li>
+                  <li>Dean's Honours</li>
                </ul>
             </div>
-            <div class="col s12 m6" id="skills">
-               <h4><i class="fas fa-code"></i></h4>
+            <div class="col s12 m6 center" id="experience">
+               <h4><i class="fas fa-briefcase"></i></h4>
                <ul>
-                  <li>Python</li>
-                  <li>Javascript</li>
-                  <li>Django</li>
-                  <li>Flask</li>
-                  <li>VBA/Excel</li>
-                  <li>SQL</li>
-                  <li>HTML/CSS</li>
-                  <li>Tableau</li>
-                  <li>Bloomberg Terminal</li>
+                  <li><a href="https://www.aberdeenstandard.com/" target="_blank">Aberdeen Standard Investments -
+                        Edinburgh, UK</a>
+                  <li>Performance Analyst</li>
+                  <br>
+                  <li><a href="https://www.blackrock.com/" target="_blank">BlackRock - Edinburgh, UK</a></li>
+                  </li>
+                  <li>Cash & Asset Operations Analyst</li>
+                  <li>Securities Lending Operations Analyst</li>
+                  <br>
+                  <li><a href="https://www.qsuper.qld.gov.au" target="_blank">QSuper - Brisbane, Australia</a></li>
+                  <li>Investment Operations Analyst</li>
                </ul>
             </div>
-            <div class="row">
-               <div class="col s12" id="experience">
-                  <h4><i class="fas fa-briefcase"></i></h4>
-                  <ul>
-                     <li><a href="https://www.aberdeenstandard.com/" target="_blank">Aberdeen Standard Investments</a>
-                     <li>Performance Analyst</li>
-                     <br>
-                     <li><a href="https://www.blackrock.com/" target="_blank">BlackRock</a></li>
-                     </li>
-                     <li>Cash & Asset Operations Analyst</li>
-                     <li>Securities Lending Operations Analyst</li>
-                     <br>
-                     <li><a href="https://www.qsuper.qld.gov.au" target="_blank">QSuper</a></li>
-                     <li>Investment Operations Analyst</li>
-                  </ul>
-               </div>
+            <div class="col s12 center" id="contact">
+               <br>
+               <hr>
+               <br>
+               <ul id="contact-list">
+                  <li> <a href="https://www.linkedin.com/in/thomas-dunn-689b0168"><img src="images/linkedin.png"
+                           alt="LinkedIn" height="28px"></a></li>
+                  <li><a href="https://github.com/tdunn891"><i class="devicon-github-plain-wordmark colored"></i></a>
+                  </li>
+                  <li><a href="mailto:thomas.brian.dunn@gmail.com"><i class="material-icons">email</i></a></li>
+               </ul>
+               <br>
+               <span id="footer-email">thomas.brian.dunn@gmail.com</span>
             </div>
          </div>
       </div>
@@ -183,39 +226,9 @@
                      class="material-icons">email</i></a></li>
             <li><a class="btn-floating white" href="https://github.com/tdunn891/" target="_blank"><img
                      src="images/github-32.png" id="fab-github"></a></li>
-            <!-- <li><a class="btn-floating blue"><i class="material-icons"></i></a></li> -->
          </ul>
       </div>
    </main>
-   <!-- Footer -->
-   <footer class="page-footer white">
-      <hr>
-      <div class="container">
-         <div class="row">
-            <div class="col l6 s12" id="contact">
-               <h5 class="grey-text"><i class="far fa-envelope"></i> Contact</h5>
-               <ul>
-                  <li><a href="https://www.linkedin.com/in/thomas-dunn-689b0168">LinkedIn</a></li>
-                  <li><a href="https://github.com/tdunn891">GitHub</a></li>
-                  <li><a href="mailto:thomas.brian.dunn@gmail.com">Email</a></li>
-               </ul>
-            </div>
-            <div class="col l4 offset-l2 s12">
-               <!-- <h5 class="grey-text">Links</h5> -->
-               <ul>
-                  <!-- <li><a href="https://www.linkedin.com/in/thomas-dunn-689b0168">LinkedIn</a></li>
-                  <li><a href="mailto:thomas.brian.dunn@gmail.com">Email</a></li> -->
-               </ul>
-            </div>
-         </div>
-      </div>
-      <!-- <div class="footer-copyright">
-         <div class="container"> -->
-      <!-- <span class="grey-text">2020 Thomas Dunn</span> -->
-      <!-- <a class="grey-text right" href="#!">More Links</a> -->
-      <!-- </div>
-      </div> -->
-   </footer>
 
    <!--Import jQuery before materialize.js-->
    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

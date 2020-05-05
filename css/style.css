@@ -4,7 +4,7 @@ html {
 
 body {
 	/* background-color: aliceblue; */
-	font-family: monospace;
+	font-family: 'Fira Code', monospace;
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
@@ -23,8 +23,12 @@ main {
 	transition: ease-in-out 0.3s;
 }
 
-.brand-logo {
-	margin-left: 95px;
+#burger {
+	color: black;
+}
+
+#mobile-demo li a {
+	color: white;
 }
 
 #tag-line {
@@ -36,7 +40,7 @@ main {
 }
 
 .github-icon {
-	width: 22px;
+	width: 20px;
 }
 
 #fab-github {
@@ -60,4 +64,78 @@ main {
 
 .badge {
 	font-size: 12px !important;
+}
+
+/* Skill icons */
+[class*='devicon'] {
+	font-size: 44px;
+}
+
+.skills-list li:hover {
+	opacity: 0.7;
+}
+
+#contact-list li:hover {
+	opacity: 0.7;
+}
+
+#bloomberg {
+	padding-top: 10px;
+	width: 88px;
+}
+
+#tableau {
+	width: 46px;
+}
+
+#flask {
+	padding-top: 6px;
+	width: 56px;
+}
+
+#materialize {
+	padding-top: 8px;
+	width: 42px;
+}
+
+#excel-vba {
+	width: 130px;
+}
+
+#footer-email {
+	font-size: 12px;
+}
+
+.skills-list li,
+#contact-list li {
+	float: left;
+	margin: 14px 14px;
+}
+
+.skills-list,
+#contact-list {
+	display: inline-block;
+}
+
+.skills-list-2 {
+	margin-top: 0px;
+}
+
+@media (max-width: 562px) {
+	#tag-line {
+		display: none;
+	}
+}
+
+/*  */
+@media (min-width: 962px) {
+	.brand-logo {
+		margin-left: 28px;
+	}
+}
+
+* {
+	/* outline: solid pink 1px;
+	outline-style: dashed;
+	outline-offset: -1px; */
 }
